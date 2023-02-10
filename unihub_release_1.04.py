@@ -25,9 +25,9 @@ try:
 except ModuleNotFoundError: 
     os.system('pip install fade')
 user = os.getlogin()
-version = '1.04'
+version = '1.05'
 version_type = f'Public Release - {version}'
-unihub_splash = '''test
+unihub_splash = '''
        █    ██  ███▄    █  ██▓ ██░ ██  █    ██  ▄▄▄▄   
        ██  ▓██▒ ██ ▀█   █ ▓██▒▓██░ ██▒ ██  ▓██▒▓█████▄ 
       ▓██  ▒██░▓██  ▀█ ██▒▒██▒▒██▀▀██░▓██  ▒██░▒██▒ ▄██
@@ -72,6 +72,7 @@ def mods():
 [6] Domestic Market
 [7] Emery1212
 [8] xoFroggy
+[9] Drowsy Sam
 
 *Hit enter to go back without selection.*''')
     choice = input()
@@ -115,7 +116,7 @@ def mods():
                     open_link('https://modsfire.com/pr94oP9ulidpYn4')
                 else:
                     if choice2 == '':
-                        menu()
+                        mods()
                     else:
                         invalid()
             else:
@@ -211,7 +212,7 @@ def mods():
                             open_link('https://modsfire.com/KA76C3CDfQEDL74')
                         else:
                             if choice4 == '':
-                                menu()
+                                mods()
                             else:
                                 invalid()
                     else:
@@ -231,7 +232,7 @@ def mods():
                                     open_link('https://drive.google.com/file/d/1e0TcVBxgHWcJbv5P646vNWkrR4J845Ik/view')
                                 else:
                                     if choice5 =='':
-                                        menu()
+                                        mods()
                                     else:
                                         invalid()
                         else:
@@ -255,7 +256,7 @@ def mods():
                                             open_link('https://kemono.party/data/09/b1/09b191dbd6a21bb13e01316777520a219901a318949250ddffe61c7d956b17a7.zip?f=08to11silvtyy.zip')
                                         else:
                                             if choice6 == '':
-                                                menu()
+                                                mods()
                                             else:
                                                 invalid()
                             else:
@@ -269,7 +270,7 @@ def mods():
                                         open_link('https://www.mediafire.com/file/f8m2834ifgaef0o/axle_valley.zip/file')
                                     else:
                                         if choice7 == '':
-                                            menu()
+                                            mods()
                                         else:
                                             invalid()
                                 else:
@@ -357,14 +358,58 @@ def mods():
                                                                                                                     open_link('https://kemono.party/data/45/2b/452be0db6d39c684877da5c6628c62c56ed46e325e131975d59f6b6c7b1cf7c7.zip?f=frog240_BeamNG.zip')
                                                                                                                 else:
                                                                                                                     if choice8 == '':
-                                                                                                                        menu()
+                                                                                                                        mods()
                                                                                                                     else:
                                                                                                                         invalid()
                                     else:
-                                        if choice == '':
-                                            menu()
+                                        if choice == '9':
+                                            clear()
+                                            print(colored_splash)
+                                            print('''
+[1] Millington DS7
+[2] DSC Flea
+[3] D300S Hub Dyno & Fan
+[4] DS Radial
+[5] DSC Jack Stand
+[6] DSC Turntable
+[7] DS Drogue Parachute
+[8] DSC All-Wheel Drive Dynamometer
+
+*Hit enter to go back without selection.*''')
+                                            choice9 = input()
+                                            if choice9 == '1':
+                                                open_link('https://kemono.party/data/c4/1e/c41e2f866a194b72aafd98ddbaef783a0793ca900d13971bfb3c5a47c3032f47.zip?f=Millington_DS-7_Dec.zip')
+                                            else:
+                                                if choice9 == '2':
+                                                    open_link('https://kemono.party/data/52/da/52da8c19498efc7ec688731c86114e36e6e7754958079413cf34a8c8c863d226.zip?f=DSC_Flea_Nov1.zip')
+                                                else:
+                                                    if choice9 == '3':
+                                                        open_link('https://kemono.party/data/c2/1b/c21bc1f71d0ef9a9596de329de010bbc0422ea270652cf88988cc8f83df6b8bd.zip?f=D300S_Hub_Dyno_Dec6.zip')
+                                                    else:
+                                                        if choice9 == '4':
+                                                            open_link('https://kemono.party/data/33/76/3376fde3df885faadb5960d7e5798efa614a75b90ae72a1fee5d07ad7c50bec7.zip?f=DS_Radial_Oct.zip')
+                                                        else:
+                                                            if choice9 == '5':
+                                                                open_link('https://kemono.party/data/68/bb/68bb1da50ba784d45380df17a2b857661f594237fe9a7966fdd4ca9281e3317b.zip?f=DSC_Jackstand.zip')
+                                                            else:
+                                                                if choice9 == '6':
+                                                                    open_link('https://kemono.party/data/a5/8a/a58a764f9aa110885dab4bfdedb39b4f094833e7b3d891a2dd83d9a703ef505b.zip?f=DSC_Turntable_Nov6.zip')
+                                                                else:
+                                                                    if choice9 == '7':
+                                                                        open_link('https://kemono.party/data/9c/c2/9cc25633d2c019b6c91edea8f7948ee245c68d99be7729b9f84d33def4d2b6d9.zip?f=DS_Drogue_chute_Dec20.zip')
+                                                                    else:
+                                                                        if choice9 == '8':
+                                                                            open_link('https://kemono.party/data/aa/f4/aaf4d5c799094fad901b218bc7e3dd9bf5a6ceff8df4ccee5ae32b539fed8276.zip?f=DSC_AWD_Dyno.zip')
+                                                                        else:
+                                                                            if choice9 == '':
+                                                                                mods()
+                                                                            else:
+                                                                                invalid()
                                         else:
-                                            invalid()
+                                            if choice == '':
+                                                menu()
+                                            else:
+                                                menu()
 
 def menu(): # Function so we can return
     clear()
@@ -393,14 +438,17 @@ def menu(): # Function so we can return
             else:
                 if inpu1 == '4':
                     clear()
-                    print('Changelog will be here when completed. Hit enter to return.')
+                    print('''
+v1.0.0 - Release
+v1.0.4 - 2/09/2023 - Added many mods, at a total of 46. Fixed .exe variant
+v1.0.5 - 2/10/2023 - Added Drowsy Sam's mods, now at a total of 54 mods''')
                     input()
                     menu()
                 else:
                     if inpu1 == '5':
                         clear()
                         print(f'''
-You are using {version_type}, released on 2/09/2023 (M/DD/YYYY), it using {total_modules} modules to operate. To find an updated version type "discord" and enter. Otherwise hit enter to go back.''')
+You are using {version_type}, released on 2/10/2023 (M/DD/YYYY), it using {total_modules} modules to operate. To find an updated version type "discord" and enter. Otherwise hit enter to go back.''')
                         inpu2 = input()
                         if inpu2 == 'discord':
                             discord()
